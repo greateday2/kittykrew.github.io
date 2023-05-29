@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kittykrew</title>
+	<meta name="viewport" content="width=1024px">
+	<link rel="shortcut icon" href="image/kk.ico">
+</head>
+<body link=#fff vlink= #fff alink= #fff>
+<style type= "text/css">
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+,:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-style: 100%;
+    line-height: 1;
+    font-style: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body{min-width: 1024px;}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+
+h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
+div{
+	font-family: 'Rubik', sans-serif;
+}
+
+.lock{position: fixed; 
+	font-family: 'Rubik', sans-serif;
+	width: 100%;
+	background: #55AAFF;
+	padding: 20px;
+	z-index: 100;
+}
+.block{
+	font-weight: bold; 
+	color: #FFE403;
+	font-size: 48px;
+	position: relative;
+	left: 5%;
+	top: 0px;
+}
+.discord{
+	font-family: 'Roboto Mono', monospace;
+	color: #fff;
+	font-size: 36px;
+	position: relative;
+	left: 30%;
+	top: 0px;
+	font-weight: bold; 
+	text-align: center
+	transition-duration: 2s;
+}
+.newgrounds{
+	font-family: 'Roboto Mono', monospace;
+	color: #fff;
+	font-size: 36px;
+	position: relative;
+	left: 40%;
+	top: 0px;
+	font-weight: bold; 
+	text-align: center
+	transition-duration: 2s;
+}
+.title_spam{
+	font-family: 'Bebas Neue', sans-serif;
+	Unselectable text.
+	padding: 20%;
+	font-size: 500%;
+	color: #fff;
+	position: absolute;
+    top: 300px;
+    left: 34%;
+	font-weight: bold;
+    transform: translate(-100%, -50%);
+	opacity: 0; 
+	transition: 1s;
+}
+.title_spam{
+	transform: translate(-50%, -50%);
+	opacity: 1; 
+}
+.spam_img{
+	importance: hight;
+	width: 100%;
+	position: relative;
+	left: 0px;
+	top: 10px;
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+}
+.button_1_1{
+
+	border: none;
+	position: absolute;
+    top: 520px;
+    left: 19%;
+	weight: 400px;
+	background-color: #55AAFF;
+	color: #ff0000;
+	transform: translate(-50%, -50%);
+	padding: 20px 35px;
+	border-radius: 20px;
+	font-size: 40px;
+	filter: drop-shadow(0px 10px #4444dd);
+	transition-duration: 2s;
+	font-weight: bolder;
+}
+.button_1_1:hover{
+	background-color: #0000ff;
+	color: #cc0000;
+	filter: drop-shadow(0px 5px #00008b);
+	position: absolute;
+    top: 525px;
+    left: 19%;
+	padding: 20px 35px;
+	font-size: 55px;
+}
+.button_1_1:active{
+	background-color: #000080;
+	color: #cc0000;
+	filter: drop-shadow(0px 0px #00008b);
+	position: absolute;
+    top: 530px;
+    left: 19%;
+}
+.button_1_2{
+	font-weight: bolder;
+	position: absolute;
+    top: 520px;
+    left: 59%;
+	border: 3px solid #fff;
+	weight: 400px;
+	background: rgba(0, 0, 0, 0);
+	color: #fff;
+	transform: translate(-50%, -50%);
+	padding: 20px 35px;
+	border-radius: 20px;
+	font-size: 40px;
+	transition-duration: 2s;
+}
+.button_1_2:hover{
+	position: absolute;
+    top: 525px;
+    left: 59%;
+	padding: 20px 35px;
+	font-size: 55px;
+}
+.button_1_2:active{
+	position: absolute;
+    top: 530px;
+    left: 59%;
+}
+.start{
+	max-width: 600px;
+	font-size: 26px;
+	position: absolute;
+    top: 1400px;
+    left: 5%;
+	text-align:  left;
+}
+.war{
+	max-width: 600px;
+	font-size: 26px;
+	position: absolute;
+    top: 2050px;
+   left: 5%;
+	text-align:  left;;
+}
+.die{
+	max-width: 600px;
+	font-size: 26px;
+	position: absolute;
+    top: 2420px;
+    left: 5%;
+	text-align:  left;
+}
+.noth{
+	max-width: 600px;
+	font-size: 26px;
+	position: absolute;
+    top: 2950px;
+    left: 5%;
+	text-align:  left;
+}
+.reval{
+	max-width: 600px;
+	font-size: 26px;
+	position: absolute;
+    top: 3450px;
+    left: 5%;
+	text-align:  left;
+}
+.from{
+	max-width: 600px;
+	font-size: 26px;
+	position: absolute;
+    top: 4150px;
+    left: 25%;
+	text-align:  center;
+}
+.history1{
+	position: absolute;
+    top: 1000px;
+    left: 35%;
+	font-size: 98px;
+	text-align: center;
+}
+.history2{
+	position: absolute;
+    top: 1250px;
+    left: 40%;
+	font-size: 64px;
+	text-align: center;
+}
+.history3{
+	position: absolute;
+    top: 1900px;
+    left: 30%;
+	font-size: 64px;
+	text-align: center;
+}
+.history4{
+	position: absolute;
+    top: 2300px;
+    left: 30%;
+	font-size: 64px;
+	text-align: center;
+}
+.history5{
+	position: absolute;
+    top: 2800px;
+    left: 30%;
+	font-size: 64px;
+	text-align: center;
+}
+.history6{
+	position: absolute;
+    top: 3200px;
+    left: 30%;
+	font-size: 64px;
+	text-align: center;
+}
+.creat{
+	position: absolute;
+    top: 4000px;
+    left: 30%;
+	font-size: 64px;
+	text-align: center;
+}
+.files{
+	position: absolute;
+    top: 4650px;
+    left: 44%;
+	font-size: 64px;
+	text-align: center;
+}
+.greateday{
+	position: absolute;
+    top: 4700px;
+    left: 35%;
+	font-size: 28px;
+	width: 400px;
+	height: 100px;
+}
+.spam1_img{
+	importance: hight;
+	width: 50%;
+	position: relative;
+	left: 70%;
+	top: -320px;
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+	border-radius: 30px;
+	
+}
+.spam2_img{
+	importance: hight;
+	width: 50%;
+	position: relative;
+	left: 100%;
+	top: -170px;
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+	border-radius: 30px;
+}
+.spam3_img{
+	importance: hight;
+	width: 30%;
+	position: relative;
+	left: 112%;
+	top: -280px;
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+	border-radius: 30px;
+}
+.spam4_img{
+	importance: hight;
+	width: 50%;
+	position: relative;
+	left: 100%;
+	top: -210px;
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+	border-radius: 30px;
+}
+.spam5_img{
+	importance: hight;
+	width: 60%;
+	position: relative;
+	left: 100%;
+	top: -320px;
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+	border-radius: 30px;
+}
+.start1{
+	opacity: 0;
+	transform: translateY(100%);
+}
+.start1.element-show{
+	opacity: 1;
+	transition: all 1s;
+	transform: translateY(0%);
+}
+</style>
+<div class="lock">
+<span class="block">kittykrew</span>
+  <span class="block"> <h2 class="creat">from the creator</h2></span>
+  <a href="#first-link"> </a> 
+  <span class="discord"><a href="https://discord.com/invite/nn4VBD8Dzr" target="_blank">discord</a></span>
+  <span class="newgrounds"><a href="https://newkittykrew.newgrounds.com/" target="_blank">newgrounds</a></span>
+</div>
+<div class="button_1" link=#fff vlink=#fff alink=#fff>
+ <img class="spam_img" src="image/spam.png" alt="oh no"> <h1 class="title_spam"><span class="start1">flash group with the<br/> most selective spam</span></h1>
+
+<form action="https://newkittykrew.newgrounds.com/" target="_blank">
+ <button class="button_1_1">NewKittyKrew</button>
+</form>
+<form action="https://kittykrew.newgrounds.com/" target="_blank">
+ <button class="button_1_2">OldKittyKrew</button>
+ </form>
+ <span class="history1"><h2>history</h2></span>
+ <span class="history2" ><h3>2006</h3></span>
+ <div class="start">
+	<span class="start1"> On July 17, 3 people released a colab animation that they spent very little time on, they were BigfuzzyKitten, Seel and Lasse, and the rest of the people followed them doing something similar, so the kittykrew spam group appeared, all they did was invite others to their projects people in order for these videos to pass the content check on the newgrounds site, they had to put a KK intro to the rules, there were several of them, but most often they put in an intro that would be in the "files", animations from their users came out every day, but by the end of 2006 they began to attack other spam groups, it is known that there was an attack on Star Syndicate, Socom Squad, and Uzi Union, and they almost broke up</span>
+	<img class="spam1_img" src="image/bfk.png" alt="oh no">
+ </div>
+
+ <span class="history3"><h3>2007 - 2009</h3></span>
+ <div class="war">
+	<span class="start1">2007 started with the restoration of the group and the beginning of new wars, some wars were repeated with some previous teams, almost nothing happened, but accounts began to be hacked, and in 2009 the group broke up, also BFK decided to leave and that was the final blow to the group</span>
+	<br/><img class="spam2_img" src="image/pfp.png" alt="oh no">
+ </div>
+ <span class="history4" ><h3>2010 - 2013</h3></span>
+ <div class="die">
+	<span class="start1">further in the team, the administrators kicked out a lot of important people from the team who were still there from the beginning of the group, this caused a riot, BFK left the animation preloaders and left, animations began to appear actively again and by the end of 2013 there was almost no one, the old participants say that it was and for the fact that they were tired or they grew up, because before, almost everyone was there for 14 years (2009) and then there was no time and energy to deal with nonsense</span>
+	<br/><img class="spam3_img" src="image/card.png" alt="oh no">
+ </div>
+ <span class="history5"><h3>2015 - 2019</h3></span>
+ <div class="noth">
+	<span class="start1">at that moment, about 2 animations came out and in the main account there were top posts about the fact that the team is gaining strength, their forum was remade and had a message with an answer to some questions from an anonymous person, in 2017 a server appeared that is now used as a KK server, and in 2019 announced the complete death of the group</span>
+	<br/><img class="spam4_img" src="image/kk.png" alt="oh no">
+ </div>
+ <span class="history6"><h3>2022 - 2023</h3></span>
+ <div class="reval">
+	<span class="start1">in 2022, one of the popular members of group 321 offered to return the group and some people agreed, and about 10 old members returned and new ones appeared, only one of them was doing not bad spam then, it was neo kitty(anonymousefrog)(anonus), and he and led most of the negotiations, by the end of 2022 it turned out that he was a pedophile and he was kicked out of the group and what happened to him then is unknown, after which the rules of good spam appeared, and by the beginning of 2023 neo kitty was kicked out of the confusion with the fact that abortkitty thought that he is 321, after which he tried to return his mtv kitty but failed, he posted his last name and left the group, after which now the group says that they are dead and do not want revivals</span>
+	<br/><img class="spam5_img" src="image/house.png" alt="oh no">
+ </div>
+<h2 class="creat">from the creator</h2>
+<a name="down"></a>
+ <div class="from">
+	I talked to some of the departed and other people, and this is what I can say from myself, mtv kitty left due to inactivity in animations, neo kitty (anonus) according to many people is a terrible person, and he is often used to make him something did for them, 321 pedophiles, I originally wanted to add more about the story but aborted kitty(fetus) said that there is no need to revive the group, but this is just to answer many questions and the last thing people do is write it all down on Wikipedia and this is a source of information , also kitty krew when Ipsugal appeared all newgrounds (2022), but MTV said that he didn’t even know about it and found out through roomba clock, at the moment this is an old school group, you can enter it but you won’t find anything for yourself there, just be an ordinary person
+ </div>
+<div class="greateday"> create by @greateday</div>
+<script>
+//page
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
+    }
+  });
+}
+
+var options = {
+  threshold: [0.5] };
+var observer = new IntersectionObserver(onEntry, options);
+var elements = document.querySelectorAll('.start1');
+
+for (var elm of elements) {
+  observer.observe(elm);
+}
+</script>
+</body>
+</html>
