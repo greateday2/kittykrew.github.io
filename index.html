@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>kittykrew</title>
-	<meta name="viewport" content="width=1024px">
+	<meta name="viewport" content="width=device - width">
 	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
 </head>
 <body link=#fff vlink= #fff alink= #fff>
@@ -32,7 +32,6 @@ html, body{
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-body{min-width: 1024px;}
 
 input, button, textarea{font-family: inherit;}
 
@@ -49,11 +48,12 @@ div{
 	font-family: 'Rubik', sans-serif;
 }
 
+
 .lock{position: fixed; 
 	font-family: 'Rubik', sans-serif;
 	width: 100%;
 	background: #55AAFF;
-	padding: 20px;
+	padding: 2%;
 	z-index: 100;
 }
 .block{
@@ -90,11 +90,11 @@ div{
 	font-family: 'Bebas Neue', sans-serif;
 	Unselectable text.
 	padding: 20%;
-	font-size: 500%;
+	font-size: 400%;
 	color: #fff;
 	position: absolute;
     top: 300px;
-    left: 34%;
+    left: 33%;
 	font-weight: bold;
     transform: translate(-100%, -50%);
 	opacity: 0; 
@@ -120,13 +120,13 @@ div{
 
 	border: none;
 	position: absolute;
-    top: 520px;
+    top: 500px;
     left: 19%;
-	weight: 400px;
+	weight: 350px;
 	background-color: #55AAFF;
 	color: #ff0000;
 	transform: translate(-50%, -50%);
-	padding: 20px 35px;
+	padding: 20px 25px;
 	border-radius: 20px;
 	font-size: 40px;
 	filter: drop-shadow(0px 10px #4444dd);
@@ -138,7 +138,7 @@ div{
 	color: #cc0000;
 	filter: drop-shadow(0px 5px #00008b);
 	position: absolute;
-    top: 525px;
+    top: 500px;
     left: 20%;
 	padding: 20px 35px;
 	font-size: 55px;
@@ -154,21 +154,21 @@ div{
 .button_1_2{
 	font-weight: bolder;
 	position: absolute;
-    top: 520px;
+    top: 500px;
     left: 59%;
 	border: 3px solid #fff;
-	weight: 400px;
+	weight: 350px;
 	background: rgba(0, 0, 0, 0);
 	color: #fff;
 	transform: translate(-50%, -50%);
-	padding: 20px 35px;
+	padding: 20px 25px;
 	border-radius: 20px;
 	font-size: 40px;
 	transition-duration: 2s;
 }
 .button_1_2:hover{
 	position: absolute;
-    top: 525px;
+    top: 500px;
     left: 59%;
 	padding: 20px 35px;
 	font-size: 55px;
@@ -294,7 +294,7 @@ div{
 	importance: hight;
 	width: 50%;
 	position: relative;
-	left: 70%;
+	left: 80%;
 	top: -320px;
 	-moz-user-select: none; 
 	-ms-user-select: none; 
@@ -308,7 +308,7 @@ div{
 	importance: hight;
 	width: 50%;
 	position: relative;
-	left: 100%;
+	left: 110%;
 	top: -170px;
 	-moz-user-select: none; 
 	-ms-user-select: none; 
@@ -321,19 +321,20 @@ div{
 	importance: hight;
 	width: 30%;
 	position: relative;
-	left: 112%;
+	left: 117%;
 	top: -280px;
 	-moz-user-select: none; 
 	-ms-user-select: none; 
 	-o-user-select: none; 
 	-webkit-user-select: none; 
 	user-select: none;
+	align: center;
 }
 .spam4_img{
 	importance: hight;
 	width: 50%;
 	position: relative;
-	left: 100%;
+	left: 110%;
 	top: -210px;
 	-moz-user-select: none; 
 	-ms-user-select: none; 
@@ -346,7 +347,7 @@ div{
 	importance: hight;
 	width: 60%;
 	position: relative;
-	left: 100%;
+	left: 110%;
 	top: -320px;
 	-moz-user-select: none; 
 	-ms-user-select: none; 
@@ -364,7 +365,30 @@ div{
 	transition: all 1s;
 	transform: translateY(0%);
 }
-
+@media (max-width: 1200px){
+	.body{
+		max-width: 970px;
+	}
+	.spam1_img, .spam2_img, .spam3_img, .spam4_img, .spam5_img{
+		width: 40%;
+	}
+}
+@media (max-width: 992px){
+	.body{
+		max-width: 750px;
+	}
+	.spam1_img, .spam2_img, .spam3_img, .spam4_img, .spam5_img{
+		width: 30%;
+	}
+}
+@media (max-width: 762px){
+	.body{
+		max-width: none;
+	}
+	.spam1_img, .spam2_img, .spam3_img, .spam4_img, .spam5_img{
+		width: 20%;
+	}
+}
 </style>
 <div class="lock">
 <span class="block">kittykrew</span>
